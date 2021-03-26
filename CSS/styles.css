@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body {
+  font-family: "Roboto";
+  background: #e5e5e5;
+}
+/*cores de todas as letras usadas bem como os estilos*/
+.font-blue {
+  color: #139ef2;
+}
+.font-greylight {
+  color: #c7c7c7;
+}
+.font-greymedium {
+  color: #8e8e8e;
+}
+.font-greydark {
+  color: #262626;
+}
+.font-allblack {
+  color: #000000;
+}
+.big-letter {
+  font-size: 14px;
+}
+.medium-letter {
+  font-size: 12px;
+}
+.small-letter {
+  font-size: 11px;
+}
+.font-thick {
+  font-weight: 500;
+}
+strong{
+  font-weight: bold;
+}
+.roof { /*configuração das divs da barra superior*/
+  width: 100%;
+  height: 54px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.roof-bar {
+  width: 935px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roof-mobile{
+  width: 100%;
+  display: none;
+  
+}
+.roof-mobile ion-icon{
+  font-size: 22px;
+}
+.roof-bar ion-icon {
+  margin-right: 10px;
+  font-size: 22px;
+}
+.roof-left {
+  width: 147px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.separator {
+  width: 1px;
+  background: #dbdbdb;
+  height: 22px;
+}
+.search {
+  width: 215px;
+  height: 28px;
+  background: #fafafa;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #dbdbdb solid;
+}
+.roof-spacer {
+  height: 1px;
+  width: 100%;
+  background: #dbdbdb;
+  position: fixed;
+  top: 54px;
+}
+.story { /*configuração das divs do menu de stories*/
+  width: 935px;
+  height: 118px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  margin-top: 88px;
+  display: flex;
+  background: #fff;
+  border: 1px #dbdbdb solid;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.new-stories{
+  height: 86px;
+  width: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.next-button{
+  position: absolute;
+  top: 46px;
+  left: 549px;
+  width: 36px;
+  height: 36px;
+  z-index: 1;
+}
+.next-button ion-icon{
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+.next-button ion-icon:hover{
+  color: #139ef2;
+}
+.story img {
+  border-radius: 28px;
+  height: 56px;
+  width: 56px;
+}
+.backgrounded {
+  width: 66px;
+  height: 66px;
+  border-radius: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/Midia/stories_background.jpg");
+  background-size: cover;
+}
+.subtitles{
+  height: 19px;
+  width: 935px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.suggestions { /*configuração das divs do menu de sugestões para novos seguidores*/
+  height: 466px;
+  width: 323px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 88px;
+  left: calc(50% + 146.5px);
+  background: #e5e5e5;
+}
+.suggestions-top {
+  height: 118px;
+  width: 291px;
+  padding-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  background: #e5e5e5;
+}
+.suggestions-bottom {
+  width: 291px;
+  padding-left: 30px;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 348px;
+}
+.follow-box {
+  width: 292px;
+  justify-content: space-between;
+  display: flex;
+}
+.suggestions-top img {
+  border-radius: 28px;
+  height: 56px;
+  width: 56px;
+  margin-right: 17px;
+}
+.suggestions-bottom img {
+  border-radius: 16px;
+  height: 32px;
+  width: 32px;
+}
+.new-suggestions {
+  width: 291px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.new-suggestions div {
+  height: 32px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: center;
+}
+.new-suggestions img {
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  margin-right: 11px;
+}
+.insta-feed { /*configuração das divs do feed principal do instagram*/
+  width: 935px;
+  height: auto;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.feed-box {
+  height: 719px;
+  width: 614px;
+  background: #fff;
+  border: 1px #e5e5e5 solid;
+  margin-top: 0;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.box-top{
+  display: flex;
+  width: 580px;
+  padding-left: 17px;
+  padding-right: 17px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.box-picture{
+  height: 612px;
+  width: 612px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.box-picture img{
+  width: 100%;
+}
+.box-picture video{
+  width: 100%;
+  height: auto;
+}
+.box-bottom{
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: left;
+}
+.liked-by{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-bottom ion-icon{
+  font-size: 22px; 
+  margin-right: 10px;
+}
+.box-bottom img{
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+.bottom-bar{
+  display: none;
+}
+.bottom-bar ion-icon{
+  font-size: 22px; 
+  margin-left: 15px;
+  margin-right: 15px;
+} 
+@media (max-width: 935px){  /*Configurações para tela reduzida*/
+  .feed-box{ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 614px;
+  }
+  .suggestions {
+    display: none;
+  }
+  .new-stories{
+    margin-right: 14px;
+  }
+  .insta-feed {
+    width: 614px;    
+  }
+  .story{
+    width: 600px;
+    padding-left: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+    overflow: hidden;   
+  }
+} 
+@media (max-width: 614px){ /*Configurações para versão mobile*/
+  .bottom-bar{
+    width: 100%;
+    height: 54px;
+    background: #fff;
+    border: 1px #dbdbdb solid;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left:0; 
+    top:calc(100vh - 54px);
+    }
+    .feed-box{
+      width: 100%;
+    }
+    .next-button{
+      display: none;
+    }
+    .story{
+      align-items: center;
+      width: 100%;
+      background: #e5e5e5;  
+      justify-content: space-between;
+      margin-top: 54px;
+      margin-bottom: 0;
+      position: static;
+    }
+    .roof-mobile{
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .roof-bar{
+      display: none;
+    }
+}
