@@ -144,7 +144,7 @@ strong{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/Midia/stories_background.jpg");
+  background-image: url("/Midia/stories_background.jpg"); /*Coloca a imagem de background a todos objetos da classe*/
   background-size: cover;
 }
 .subtitles{
