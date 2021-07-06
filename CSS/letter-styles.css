@@ -1,0 +1,30 @@
+.font-blue {
+    color: #139ef2;
+  }
+  .font-greylight {
+    color: #c7c7c7;
+  }
+  .font-greymedium {
+    color: #8e8e8e;
+  }
+  .font-greydark {
+    color: #262626;
+  }
+  .font-allblack {
+    color: #000000;
+  }
+  .big-letter {
+    font-size: 14px;
+  }
+  .medium-letter {
+    font-size: 12px;
+  }
+  .small-letter {
+    font-size: 11px;
+  }
+  .font-thick {
+    font-weight: 500;
+  }
+  strong{
+    font-weight: bold;
+  }
